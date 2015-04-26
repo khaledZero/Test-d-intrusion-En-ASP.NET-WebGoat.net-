@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Library.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="~/css/style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="headerStyle">
+            <table>
+                <tr>
+                    <td>
+                        <asp:Image ID="Image1" ImageUrl="~/img/logo_Upec.jpg" runat="server" />
+                    </td>
+                    <td style="width: 90%; padding-left: 24px">
+                        <h1>Bienvenue sur le site de test d&#39;intrusion de MKT</h1>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="menuFailles">
+            <table style="height:100%">
+                <tr>
+                    <td>
+                        <h2>Les types de failles</h2>
+                    </td>
+                </tr>
+                <tr><td>
+
+                    <asp:Button ID="ButtonSQL" runat="server" Font-Bold="True" Font-Size="Medium" ForeColor="#000066" Text="SQL Injection Connection" Width="100%" OnClick="ButtonSQL_Click" />
+
+                    </td></tr>
+                <tr><td>
+
+                    <asp:Button ID="BtnSqlInj2" runat="server" Font-Bold="True" Font-Size="Medium" ForeColor="#000066" Text="SQL Injection Affiche User" Width="100%" OnClick="BtnSqlInj2_Click" />
+
+                    </td></tr>
+                <tr><td>
+                    <asp:Button ID="ButtonXSS" runat="server" Font-Bold="True" Font-Size="Medium" ForeColor="#000099" Text="XSS Reflected" Width="100%" OnClick="ButtonXSS_Click" />
+                    </td></tr>
+                <tr><td>
+                    <asp:Button ID="ButtonXSS_stored" runat="server" Font-Bold="True" Font-Size="Medium" ForeColor="#000099" Text="XSS Stored" Width="100%" OnClick="ButtonXSS_stored_Click" />
+                    </td></tr>
+                <tr><td>
+                    <asp:Button ID="ButtonExpoDonnee" runat="server" Font-Bold="True" Font-Size="Medium" ForeColor="#000099" Text="Exposition Donnée sensibles" Width="100%" OnClick="ButtonExpoDonnee_Click" />
+                    </td></tr>
+                <tr><td>
+                    <asp:Button ID="BtnRDNSO" runat="server" Font-Bold="True" Font-Size="Medium" ForeColor="#000099" Text="Référence directe &#010; non sécurisée à un objet" Width="100%" OnClick="BtnRDNSO_Click" />
+                    </td></tr>
+                <tr><td>
+                    <asp:Button ID="BtnControlAcces" runat="server" Font-Bold="True" Font-Size="Medium" ForeColor="#000099" Text="Controle D'accès Fonctionnel" Width="100%" OnClick="BtnControlAcces_Click" />
+                    </td></tr>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+            </table>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
+

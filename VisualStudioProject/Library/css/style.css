@@ -1,0 +1,71 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: Black;
+    margin: 0 auto;
+    background-color: aliceblue;
+    width: 95%;
+    height: 100%;
+    border-radius: 3px;
+    position: initial;
+    box-shadow: #808080;
+    overflow: hidden;
+}
+
+.headerStyle {
+    color: red;
+    text-align:center;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.headerStyle table{
+    margin: 0 auto;
+    border-style:solid;
+    border-width: 2px;
+    border-radius: 15px;
+    border-color: cornflowerblue;
+}
+
+
+.menu {
+    font-weight: bolder;
+    line-height: 22px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+    outline-width: 3px;
+    outline-color: #0ff;
+    outline-style: groove;
+    font-size: 12px;
+    letter-spacing: 2px;
+    width: 99%;
+    background-color: blueviolet;
+    text-shadow: 4px 2px 9px 0px;
+    height: 26px;
+}
+
+    .menu Items {
+        background-color: blue;
+    }
+
+
+.menuFailles {
+    border-style: inset;
+    border-width: 4px;
+    margin: 2px 0px 0px 2px;    
+    border-radius: 10px;
+    border-color:grey;
+    background-color:none;
+    width: 20%;
+    height:500px;
+    float: left;
+    box-shadow: 1px 2px 9px 0px;
+}
+
+.tableStandard {
+    border:1px solid blue;
+    width:79%;
+    height:500px;
+    float:right;
+    overflow-y:scroll;
+}

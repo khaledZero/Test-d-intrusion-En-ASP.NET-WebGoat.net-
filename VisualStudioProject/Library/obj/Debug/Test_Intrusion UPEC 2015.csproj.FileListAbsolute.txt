@@ -1,0 +1,6 @@
+C:\Users\khaled\Downloads\VisualStudioProject\Library\obj\Debug\Test_Intrusion UPEC 2015.csprojResolveAssemblyReference.cache
+C:\Users\khaled\Downloads\VisualStudioProject\Library\bin\Library.dll
+C:\Users\khaled\Downloads\VisualStudioProject\Library\bin\Library.pdb
+C:\Users\khaled\Downloads\VisualStudioProject\Library\bin\SecuritySwitch.dll
+C:\Users\khaled\Downloads\VisualStudioProject\Library\obj\Debug\Library.dll
+C:\Users\khaled\Downloads\VisualStudioProject\Library\obj\Debug\Library.pdb

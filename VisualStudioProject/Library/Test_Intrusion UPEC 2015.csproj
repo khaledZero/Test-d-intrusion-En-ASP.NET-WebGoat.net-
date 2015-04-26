@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD07B146-59EB-48B9-8F5B-583374861963}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Library</RootNamespace>
+    <AssemblyName>Library</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44300</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IncludeIisSettings>true</IncludeIisSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SecuritySwitch">
+      <HintPath>..\packages\SecuritySwitch.4.4.0.0\lib\SecuritySwitch.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ControlAccesFonctionnel.aspx" />
+    <Content Include="RDNSO.aspx" />
+    <Content Include="RDNSO_profile.aspx" />
+    <Content Include="css\style.css" />
+    <Content Include="default.aspx" />
+    <Content Include="Donneesensible_Secure.aspx" />
+    <Content Include="ExpoDonneeSensible.aspx" />
+    <Content Include="img\logo_Upec.jpg" />
+    <Content Include="img\photo_1.png" />
+    <Content Include="img\photo_2.png" />
+    <Content Include="img\photo_3.jpg" />
+    <Content Include="profil.aspx" />
+    <Content Include="SqlInjection.aspx" />
+    <Content Include="SqlInjectionCorrected.aspx" />
+    <Content Include="Sql_Injection2.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XSS_corrected.aspx" />
+    <Content Include="XSS_Reflected.aspx" />
+    <Content Include="XSS_Stored.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectionBD.cs" />
+    <Compile Include="ControlAccesFonctionnel.aspx.cs">
+      <DependentUpon>ControlAccesFonctionnel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlAccesFonctionnel.aspx.designer.cs">
+      <DependentUpon>ControlAccesFonctionnel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RDNSO.aspx.cs">
+      <DependentUpon>RDNSO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RDNSO.aspx.designer.cs">
+      <DependentUpon>RDNSO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RDNSO_profile.aspx.cs">
+      <DependentUpon>RDNSO_profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RDNSO_profile.aspx.designer.cs">
+      <DependentUpon>RDNSO_profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Donneesensible_Secure.aspx.cs">
+      <DependentUpon>Donneesensible_Secure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Donneesensible_Secure.aspx.designer.cs">
+      <DependentUpon>Donneesensible_Secure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExpoDonneeSensible.aspx.cs">
+      <DependentUpon>ExpoDonneeSensible.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExpoDonneeSensible.aspx.designer.cs">
+      <DependentUpon>ExpoDonneeSensible.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="profil.aspx.cs">
+      <DependentUpon>profil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="profil.aspx.designer.cs">
+      <DependentUpon>profil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SqlInjection.aspx.cs">
+      <DependentUpon>SqlInjection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlInjection.aspx.designer.cs">
+      <DependentUpon>SqlInjection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlInjectionCorrected.aspx.cs">
+      <DependentUpon>SqlInjectionCorrected.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlInjectionCorrected.aspx.designer.cs">
+      <DependentUpon>SqlInjectionCorrected.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sql_Injection2.aspx.cs">
+      <DependentUpon>Sql_Injection2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sql_Injection2.aspx.designer.cs">
+      <DependentUpon>Sql_Injection2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XSS_corrected.aspx.cs">
+      <DependentUpon>XSS_corrected.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XSS_corrected.aspx.designer.cs">
+      <DependentUpon>XSS_corrected.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XSS_Reflected.aspx.cs">
+      <DependentUpon>XSS_Reflected.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XSS_Reflected.aspx.designer.cs">
+      <DependentUpon>XSS_Reflected.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XSS_Stored.aspx.cs">
+      <DependentUpon>XSS_Stored.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XSS_Stored.aspx.designer.cs">
+      <DependentUpon>XSS_Stored.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site1.Master" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\MKT.pubxml" />
+    <None Include="Properties\PublishProfiles\MKT_Web.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SecuritySwitch-v4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4974/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
